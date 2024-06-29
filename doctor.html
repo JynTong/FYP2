@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Doctor</title>
+    <link rel="stylesheet" href="register_patients.css">
+    <script src="DoctorScripts.js"></script>
+</head>
+<body>
+<header>
+    <h1>Register Doctor</h1>
+</header>
+<div class="container">
+    <form id="registerForm" action="doctor.php" method="post" onsubmit="return validateForm()">
+        <label for="doctorID">Doctor ID:</label>
+        <input type="text" id="doctorID" name="doctorID" required><br><br>
+
+        <label for="doctorName">Full Name:</label>
+        <input type="text" id="doctorName" name="doctorName" required><br><br>
+
+        <label for="doctorPassword">Password:</label>
+        <input type="password" id="doctorPassword" name="doctorPassword" required><br><br>
+
+        <label for="doctorContact">Contact:</label>
+        <input type="text" id="doctorContact" name="doctorContact" required><br><br>
+
+        <label for="doctorGender">Gender:</label>
+        <input type="text" id="doctorGender" name="doctorGender" required><br><br>
+
+        <label for="doctorAge">Age:</label>
+        <input type="number" id="doctorAge" name="doctorAge" required><br><br>
+
+        <label for="doctorAddress">Address:</label>
+        <textarea id="doctorAddress" name="doctorAddress" required></textarea><br><br>
+
+        <label for="doctorSalary">Salary:</label>
+        <input type="text" id="doctorSalary" name="doctorSalary" required></input><br><br>
+
+        <input type="hidden" id="dateCreated" name="dateCreated">
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>

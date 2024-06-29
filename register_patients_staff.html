@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Patient</title>
+    <link rel="stylesheet" href="register_patients.css">
+    <script src="RegisterScripts.js"></script>
+</head>
+<body>
+<header>
+    <h1>Register Patient</h1>
+</header>
+<div class="container">
+    <form id="registerForm" action="register_patients_staff.php" method="post" onsubmit="return validateForm()">
+        <label for="patientID">Patient ID:</label>
+        <input type="text" id="patientID" name="patientID" required><br><br>
+
+        <label for="patientName">Full Name:</label>
+        <input type="text" id="patientName" name="patientName" required><br><br>
+
+        <label for="patientPassword">Password:</label>
+        <input type="password" id="patientPassword" name="patientPassword" required><br><br>
+
+        <label for="patientContact">Contact:</label>
+        <input type="text" id="patientContact" name="patientContact" required><br><br>
+
+        <label for="patientGender">Gender:</label>
+        <input type="text" id="patientGender" name="patientGender" required><br><br>
+
+        <label for="patientAge">Age:</label>
+        <input type="number" id="patientAge" name="patientAge" required><br><br>
+
+        <label for="patientAddress">Address:</label>
+        <textarea id="patientAddress" name="patientAddress" required></textarea><br><br>
+
+        <input type="hidden" id="dateCreated" name="dateCreated">
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>

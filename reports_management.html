@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="reportStyles.css">
+</head>
+<body>
+<header><h1>Reports</h1></header>
+<div class="container">
+    <form id="filterForm">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate">
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate">
+
+        <label for="reportType">Report Type:</label>
+        <select id="reportType" name="reportType">
+            <option value="patient_registration">Patients</option>
+            <option value="appointment">Appointments</option>
+            <option value="staff">Staff</option>
+            <option value="doctor">Doctor</option>
+            <option value="billing">Payment</option>
+            <option value="ehr">Electronic Health Record</option>
+        </select>
+
+        <button type="button" onclick="filterReports()">Filter</button>
+    </form>
+
+    <div id="reportsTable">
+        <!-- Report data will be inserted here -->
+    </div>
+
+    <div class="button-container">
+        <button type="button" onclick="exportToCSV()">Export to CSV</button>
+        <button type="button" onclick="exportToWord()">Export to Word</button>
+    </div>
+<script src="reportsScripts.js"></script>
+</body>
+</html>

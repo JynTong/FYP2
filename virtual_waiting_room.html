@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Waiting Room</title>
+    <link rel="stylesheet" href="virtual.css">
+</head>
+<body>
+<div class="container">
+    <h1>Virtual Waiting Room</h1>
+    <form id="checkInForm" method="POST" action="check_in.php">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+        <button type="submit">Check-In</button>
+    </form>
+    <div id="statusMessage"></div>
+</div>
+
+<script src="VirtualScripts.js"></script>
+</body>
+</html>

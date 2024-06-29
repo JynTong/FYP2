@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+    <link rel="stylesheet" href="register_patients.css">
+    <script src="paymentScripts.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Payment Portal</h2>
+    <form id="paymentForm" action="payment_portal.php" method="post" onsubmit="return validateForm()">
+        <label for="billingID">Invoice Number:</label>
+        <input type="text" id="billingID" name="billingID" required><br><br>
+
+        <label for="billingAmount">Amount:</label>
+        <input type="text" id="billingAmount" name="billingAmount" required><br><br>
+
+        <label for="billingMethod">Payment Method:</label>
+        <input type="text" id="billingMethod" name="billingMethod" required><br><br>
+
+        <label for="billingReference">Reference:</label>
+        <input type="text" id="billingReference" name="billingReference" required><br><br>
+
+        <label for="patientID">Patient ID:</label>
+        <input type="text" id="patientID" name="patientID" required><br><br>
+
+        <input type="hidden" id="dateCreated" name="dateCreated">
+
+        <button type="submit">Make Payment</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Health Records</title>
+    <link rel="stylesheet" href="register_patients.css">
+    <script src="EHRScripts.js"></script>
+</head>
+<body>
+<header>
+    <h1>Electronic Health Records</h1>
+</header>
+<div class="container">
+    <form id="registerForm" action="ehr_doctor.php" method="post" onsubmit="return validateForm()">
+        <label for="ehrID">EHR ID:</label>
+        <input type="text" id="ehrID" name="ehrID" required><br><br>
+
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required><br><br>
+
+        <label for="patientHistory">History:</label>
+        <input type="text" id="patientHistory" name="patientHistory" required><br><br>
+
+        <label for="patientDiagnosis">Diagnosis:</label>
+        <input type="text" id="patientDiagnosis" name="patientDiagnosis" required><br><br>
+
+        <label for="patientMedication">Medication:</label>
+        <input type="text" id="patientMedication" name="patientMedication" required><br><br>
+
+        <label for="patientTreatment">Treatment:</label>
+        <input type="text" id="patientTreatment" name="patientTreatment" required><br><br>
+
+        <label for="patientTestResults">Test Results:</label>
+        <input type="text" id="patientTestResults" name="patientTestResults" required><br><br>
+
+        <input type="hidden" id="dateCreated" name="dateCreated">
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+</body>
+</html>

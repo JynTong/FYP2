@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Patient Login</h1>
+    <form action="patient_login.php" method="POST" onsubmit="return validateForm()">
+        <input type="text" name="patientID" placeholder="Patient ID"><br>
+        <input type="text" name="patientName" placeholder="Full Name"><br>
+        <input type="password" name="patientPassword" placeholder="Password"><br>
+        <button type="login">Login</button>
+        <button type="button" onclick="location.href='index.html'">Cancel</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="register_patients.css">
+    <script src="AppointmentScripts.js"></script>
+</head>
+<body>
+<header>
+    <h1>Book Appointment</h1>
+</header>
+<div class="container">
+    <form id="registerForm" action="book_appointment_patient.php" method="post" onsubmit="return validateForm()">
+        <label for="appointmentID">Appointment ID:</label>
+        <input type="text" id="appointmentID" name="appointmentID" required><br><br>
+
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required><br><br>
+
+        <label for="appointmentDate">Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required><br><br>
+
+        <label for="appointmentTime">Time:</label>
+        <input type="time" id="appointmentTime" name="appointmentTime" required><br><br>
+
+        <label for="appointmentReason">Reason For Appointment:</label>
+        <input type="text" id="appointmentReason" name="appointmentReason" required><br><br>
+
+        <label for="doctorName">Doctor Name:</label>
+        <input type="text" id="doctorName" name="doctorName" required><br><br>
+
+        <input type="hidden" id="dateCreated" name="dateCreated">
+
+        <button type="submit">Book</button>
+    </form>
+</div>
+</body>
+</html>

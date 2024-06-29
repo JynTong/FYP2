@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Administrator</title>
+    <link rel="stylesheet" href="register_patients.css">
+    <script src="StaffScripts.js"></script>
+</head>
+<body>
+<header>
+    <h1>Register Administrator</h1>
+</header>
+<div class="container">
+    <form id="registerForm" action="staff.php" method="post" onsubmit="return validateForm()">
+        <label for="staffID">Staff ID:</label>
+        <input type="text" id="staffID" name="staffID" required><br><br>
+
+        <label for="staffName">Full Name:</label>
+        <input type="text" id="staffName" name="staffName" required><br><br>
+
+        <label for="staffPassword">Password:</label>
+        <input type="password" id="staffPassword" name="staffPassword" required><br><br>
+
+        <label for="staffContact">Contact:</label>
+        <input type="text" id="staffContact" name="staffContact" required><br><br>
+
+        <label for="staffGender">Gender:</label>
+        <input type="text" id="staffGender" name="staffGender" required><br><br>
+
+        <label for="staffAge">Age:</label>
+        <input type="number" id="staffAge" name="staffAge" required><br><br>
+
+        <label for="staffAddress">Address:</label>
+        <textarea id="staffAddress" name="staffAddress" required></textarea><br><br>
+
+        <label for="staffSalary">Salary:</label>
+        <input type="text" id="staffSalary" name="staffSalary" required></input><br><br>
+
+        <input type="hidden" id="dateCreated" name="dateCreated">
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
